@@ -1,0 +1,65 @@
+import java.util.Scanner;
+public class ProgEx04 
+{
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		int[] nums = new int[10];
+		int counter1 = 0, counter2 = 0, counter3 = 0, counter4 = 0, counter5 = 0, counter6 = 0, counter7 = 0, 
+				counter8 = 0, counter9 = 0, counter10 = 0;
+		
+		//creates the array of integers
+		for(int i = 0; i < nums.length; i++)
+		{
+			System.out.println("Input an integer between 1 and 100 inclusive: ");
+			nums[i] = scan.nextInt();
+		}
+		
+		//
+		for(int j = 0; j < nums.length; j++)
+		{
+			if(nums[j] >= 1 && nums[j] <= 10)
+			{
+				counter1++;
+			}
+			if(nums[j] >= 11 && nums[j] <= 20)
+			{
+				counter2++;
+			}
+			if(nums[j] >= 21 && nums[j] <= 30)
+			{
+				counter3++;
+			}
+			if(nums[j] >= 31 && nums[j] <= 40)
+			{
+				counter4++;
+			}
+			if(nums[j] >= 41 && nums[j] <= 50)
+			{
+				counter5++;
+			}
+			if(nums[j] >= 51 && nums[j] <= 60)
+			{
+				counter6++;
+			}
+			if(nums[j] >= 61 && nums[j] <= 70)
+			{
+				counter7++;
+			}
+			if(nums[j] >= 71 && nums[j] <= 80)
+			{
+				counter8++;
+			}
+			if(nums[j] >= 81 && nums[j] <= 90)
+			{
+				counter9++;
+			}
+			if(nums[j] >= 91 && nums[j] <= 100)
+			{
+				counter10++;
+			}
+		}
+		
+		
+	}
+}
