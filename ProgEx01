@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class ProgEx01 
+{
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		int[] nums = new int[5];
+		boolean keepGoing = true;
+		int i = 0;
+		String yesNo = "";
+		
+		while(keepGoing)
+		{
+			System.out.println("Input an integer between 0 and 50 inclusive: ");
+			nums[i] = scan.nextInt();
+			i++;
+			
+			System.out.println("Would you like to input another value (y/n)?");
+			yesNo = scan.next();
+			if(yesNo.equals("n"))
+			{
+				keepGoing = !keepGoing;
+			}
+		}
+		
+		for(int w = 0; w < nums.length; w++)
+		{
+			System.out.print(nums[w]);
+		}
+	}
+}
